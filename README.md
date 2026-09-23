@@ -1,79 +1,107 @@
-# Multiple Disease Prediction System using Machine Learning
+# Pulse - Multiple Disease Prediction System
 
-![mdps - github1](https://github.com/shaadclt/Multiple-Disease-Prediction-System/assets/98437584/fdabe788-d49c-4996-8ee4-b1e0e37f09dc)
+<div align="center">
 
+**ML-powered web application for predicting Diabetes, Heart Disease, and Parkinson's Disease.**
 
-This project provides a streamlit web application for predicting multiple diseases, including diabetes, Parkinson's disease, and heart disease, using machine learning algorithms. The prediction models are deployed using Streamlit, a Python library for building interactive web applications.
+[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?style=for-the-badge\&logo=python\&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)](https://streamlit.io/)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge\&logo=scikit-learn\&logoColor=white)](https://scikit-learn.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge\&logo=pandas\&logoColor=white)](https://pandas.pydata.org/)
+[![GitHub](https://img.shields.io/badge/GitHub-TarlanaVikas-181717?style=for-the-badge\&logo=github)](https://github.com/TarlanaVikas/Pulse)
 
-## Table of Contents
+</div>
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+---
 
-## Introduction
+## Overview
 
-The Multiple Disease Prediction project aims to create a user-friendly web application that allows users to input relevant medical information and receive predictions for different diseases. The machine learning models trained on disease-specific datasets enable accurate predictions for diabetes, Parkinson's disease, and heart disease.
+**Pulse** is a Streamlit-based machine learning application that predicts the likelihood of:
+
+* Diabetes
+* Heart Disease
+* Parkinson's Disease
+
+It uses pre-trained machine learning models and provides an interactive interface for entering patient-related parameters and viewing predictions.
+
+> **Disclaimer:** For educational purposes only. Predictions are not medical diagnoses or medical advice.
+
+---
 
 ## Features
 
-The Multiple Disease Prediction web application offers the following features:
+* Multiple disease prediction
+* Interactive Streamlit UI
+* Pre-trained ML models
+* Dataset-based model development
+* Simple and lightweight interface
 
-- **User Input**: Users can input their medical information, including age, gender, blood pressure, cholesterol levels, and other relevant factors.
-- **Disease Prediction**: The application utilizes machine learning models to predict the likelihood of having diabetes, Parkinson's disease, and heart disease based on the inputted medical data.
-- **Prediction Results**: The predicted disease outcomes are displayed to the user, providing an indication of the probability of each disease.
-- **Visualization**: Visualizations are generated to highlight important features and provide insights into the prediction process.
-- **User-Friendly Interface**: The web application offers an intuitive and user-friendly interface, making it easy for individuals without technical knowledge to use the prediction tool.
+---
 
-## Setup
+## Tech Stack
 
-To use this project locally, follow these steps:
+**Python · Streamlit · Scikit-learn · Pandas · NumPy · Pickle · Jupyter Notebook**
 
-1. Clone the repository:
+---
 
-```bash
-git clone https://github.com/shaadclt/Multiple-Disease-Prediction-System.git
+## Project Structure
+
+```text
+Pulse/
+├── multiplediseaseprediction.py
+├── diabetes_model.sav
+├── heart_disease_model.sav
+├── parkinsons_model.sav
+├── diabetes.csv
+├── heart.csv
+├── parkinsons.csv
+├── Multiple Disease Prediction System - Diabetes.ipynb
+├── Multiple Disease Prediction System - Heart.ipynb
+├── Multiple Disease Prediction System - Parkinsons.ipynb
+├── requirements.txt
+└── README.md
 ```
 
-2. Install the required dependencies by running:
+---
+
+## Run Locally
 
 ```bash
+git clone https://github.com/TarlanaVikas/Pulse.git
+cd Pulse
+python -m venv venv
+venv\Scripts\activate
 pip install -r requirements.txt
-```
-
-3. Download the pre-trained machine learning models for diabetes, Parkinson's disease, and heart disease. Make sure to place them in the appropriate directories within the project structure.
-
-4. Update the necessary configurations and file paths in the project files.
-
-## Usage
-
-To run the Multiple Disease Prediction web application, follow these steps:
-
-1. Open a terminal or command prompt and navigate to the project directory.
-
-2. Run the following command to start the Streamlit application:
-
-```bash
 streamlit run multiplediseaseprediction.py
 ```
 
-3. Access the web application by opening the provided URL in your web browser.
+Open:
 
-4. Input the relevant medical information as requested by the application.
+```text
+http://localhost:8501
+```
 
-5. Click the "Predict" button to generate predictions for diabetes, Parkinson's disease, and heart disease based on the provided data.
+---
 
-6. View the prediction results and any accompanying visualizations or insights.
+## Deploy
 
-Feel free to customize the web application's appearance, add more disease prediction models, or integrate additional features based on your specific requirements.
+The application can be deployed using **Streamlit Community Cloud**.
 
-## Contributing
+Set:
 
-Contributions to this project are welcome. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request on the project's GitHub repository.
+```text
+Repository: TarlanaVikas/Pulse
+Branch: main
+Main file: multiplediseaseprediction.py
+```
 
-## License
+Then deploy.
 
-This project is licensed under the [MIT License](LICENSE). You are free to modify and use the code for both personal and commercial purposes.
+---
+
+## Author
+
+**Vikas Tarlana**
+
+[![GitHub](https://img.shields.io/badge/GitHub-TarlanaVikas-181717?style=flat-square\&logo=github)](https://github.com/TarlanaVikas)
+
