@@ -1,2 +1,5 @@
-streamlit-option-menu==0.3.2
+streamlit
+streamlit-option-menu
+numpy
+pandas
 scikit-learn
